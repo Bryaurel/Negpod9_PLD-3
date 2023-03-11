@@ -18,6 +18,6 @@ elif option == "2":
 elif option == "3":
     print("Enter the weight of the E-Waste")
 elif option == "4":
-    print("Enter the weight of the Glassware waste")
+    print("Enter the weight of the bottles")
 else:
     print("Invalid option, try again:")

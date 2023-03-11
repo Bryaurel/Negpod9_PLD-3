@@ -7,9 +7,9 @@ def menu():
     print('Welcome to Neg9 Solid Waste Management System.')
     print('Choose a number corresponding to the type of waste to dispose.')
     print('[1] Organic Waste')
-    print('[2] Plastic Waste')
+    print('[2] Plastic Bottle')
     print('[3] E-Waste')
-    print('[4] Glassware waste')
+    print('[4] Glass Bottle')
     print('[0] Exit')
 
 
