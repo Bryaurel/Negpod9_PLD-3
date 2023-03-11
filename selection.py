@@ -1,5 +1,4 @@
 
-
 def menu():
     print('[1] Organic Waste')
     print('[2] Plastic Waste')
