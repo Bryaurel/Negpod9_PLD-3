@@ -22,5 +22,4 @@ The confirm trial 2 asks the user if they are sure with the input they chose.if 
 
 openbin trial.py
 
-The openbin trial function asks the user to input the number of the type of waste they want to dispose and on entering the bin opens and they are asked to proceed to measure.
 
