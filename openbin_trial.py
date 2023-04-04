@@ -6,7 +6,7 @@ choice = int(input("\nEnter your choice (1-5): "))
 if choice == 1:
     print("The green bin labelled 'ORGANIC WASTE' opens\nProceed to measure weight")
 elif choice == 2:
-    print("The blue bin labelled 'PASTIC WASTE' opens\nProceed to measure weight")
+    print("The blue bin labelled 'PLASTIC WASTE' opens\nProceed to measure weight")
 elif choice == 3:
     print("The yellow bin labelled 'E-WASTE' opens\nProceed to measure weight")
 elif choice == 4:
