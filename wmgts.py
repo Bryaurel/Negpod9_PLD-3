@@ -1,4 +1,7 @@
+import time
 # Functions
+
+
 def display_disposal_history(disposal_history):
     """
     Given a disposal history as a list of tuples in the format (points, date), 
@@ -22,7 +25,11 @@ def rating(number):
 
 
 def menu():
-    print('Welcome to Neg9 Solid Waste Management System.')
+    print('\n\nWelcome to Neg9 Solid Waste Management System.')
+    time.sleep(1)
+    print('Please Enter your name')
+    name = input(':')
+    time.sleep(1)
     print('Choose a number corresponding to the type of waste to dispose.')
     print('[1] Organic Waste')
     print('[2] Plastic Bottle')
@@ -36,18 +43,19 @@ menu()
 choice = input(':')
 if choice == '1':
 
-    print("Confirm your selection is 1? (Yes/No)\n:")
+    print("Confirm your selection is 1? (Yes/No)")
     # Choosing which bin to open
-    choice = input()
+    choice = input(':')
     if choice == 'Yes':
-
+        time.sleep(1)
         print('Remeber that: \n1 -> ORGANIC WASTE\n2 -> PLASTIC WASTE\n3 -> E-WASTE WASTE\n4 -> GLASSWARE WASTE\n')
 
         bin_color = int(input("\nEnter your choice (1-4): "))
+        time.sleep(1)
 
         if bin_color == 1:
             print(
-                "The green bin labeled 'ORGANIC WASTE' opens\nProceed to measure weight of the waste.\n")
+                "The green bin labeled 'ORGANIC WASTE' opens\n\nProceed to measure weight of the waste.\n")
         elif bin_color == 2:
             print(
                 "The blue bin labeled 'PLASTIC WASTE' opens\nProceed to measure weight of the waste.\n")
@@ -71,12 +79,14 @@ if choice == '1':
 
         # Calculating Points earned
 
+        time.sleep(2)
+
         if quantity_of_waste <= 20:
-            print("You have earned 100 points\n")
+            print("\nYou have earned 100 points\n")
         elif quantity_of_waste >= 20 and quantity_of_waste <= 40:
-            print("You have earned 200 points\n")
+            print("\nYou have earned 200 points\n")
         elif quantity_of_waste > 40:
-            print("You have earned 400 points\n")
+            print("\nYou have earned 400 points\n")
 
         # Rating Experience
 
@@ -84,7 +94,7 @@ if choice == '1':
         rate = input('Rating: ')
 
         # Good bye
-
+        time.sleep(1)
         print('\nTHANK YOU FOR USING OUR SERVICE.')
 
     elif choice == 'No':
@@ -95,9 +105,9 @@ if choice == '1':
 elif choice == '2':
     print("Confirm your selection is 2? (Yes/No):")
     # Choosing which bin to open
-    choice = input()
+    choice = input(':')
     if choice == 'Yes':
-
+        time.sleep(1)
         print('Remeber that: \n1 -> ORGANIC WASTE\n2 -> PLASTIC WASTE\n3 -> E-WASTE WASTE\n4 -> GLASSWARE WASTE\n')
 
         bin_color = int(input("\nEnter your choice (1-4): "))
@@ -128,12 +138,14 @@ elif choice == '2':
 
         # Calculating Points earned
 
+        time.sleep(2)
+
         if quantity_of_waste <= 20:
-            print("You have earned 100 points\n")
+            print("\nYou have earned 100 points\n")
         elif quantity_of_waste >= 20 and quantity_of_waste <= 40:
-            print("You have earned 200 points\n")
+            print("\nYou have earned 200 points\n")
         elif quantity_of_waste > 40:
-            print("You have earned 400 points\n")
+            print("\nYou have earned 400 points\n")
 
         # Rating Experience
 
@@ -141,16 +153,16 @@ elif choice == '2':
         rate = input('Rating: ')
 
         # Good bye
-
+        time.sleep(1)
         print('\nTHANK YOU FOR USING OUR SERVICE.')
 
 
 elif choice == '3':
     print("Confirm your selection is 3? (Yes/No):")
     # Choosing which bin to open
-    choice = input()
+    choice = input(':')
     if choice == 'Yes':
-
+        time.sleep(1)
         print('Remeber that: \n1 -> ORGANIC WASTE\n2 -> PLASTIC WASTE\n3 -> E-WASTE WASTE\n4 -> GLASSWARE WASTE\n')
 
         bin_color = int(input("\nEnter your choice (1-4): "))
@@ -180,13 +192,13 @@ elif choice == '3':
         # print(F'You entered {quantity_of_waste} Kg(s)')
 
         # Calculating Points earned
-
+        time.sleep(2)
         if quantity_of_waste <= 20:
-            print("You have earned 100 points\n")
+            print("\nYou have earned 100 points\n")
         elif quantity_of_waste >= 20 and quantity_of_waste <= 40:
-            print("You have earned 200 points\n")
+            print("\nYou have earned 200 points\n")
         elif quantity_of_waste > 40:
-            print("You have earned 400 points\n")
+            print("\nYou have earned 400 points\n")
 
         # Rating Experience
 
@@ -194,14 +206,14 @@ elif choice == '3':
         rate = input('Rating: ')
 
         # Good bye
-
+        time.sleep(1)
         print('\nTHANK YOU FOR USING OUR SERVICE.')
 elif choice == '4':
     print("Confirm your selection is 4? (Yes/No):")
     # Choosing which bin to open
-    choice = input()
+    choice = input(':')
     if choice == 'Yes':
-
+        time.sleep(1)
         print('Remeber that: \n1 -> ORGANIC WASTE\n2 -> PLASTIC WASTE\n3 -> E-WASTE WASTE\n4 -> GLASSWARE WASTE\n')
 
         bin_color = int(input("\nEnter your choice (1-4): "))
@@ -232,23 +244,25 @@ elif choice == '4':
 
         # Calculating Points earned
 
+        time.sleep(2)
+
         if quantity_of_waste <= 20:
-            print("You have earned 100 points\n")
+            print("\nYou have earned 100 points\n")
         elif quantity_of_waste >= 20 and quantity_of_waste <= 40:
-            print("You have earned 200 points\n")
+            print("\nYou have earned 200 points\n")
         elif quantity_of_waste > 40:
-            print("You have earned 400 points\n")
+            print("\nYou have earned 400 points\n")
 
         # Rating Experience
 
         print('Kindly Rate your experience, On a scale of 1 to 10, 1 being poor and 10 being Very Good.\n')
-        rate = input('Rating: ')
+        rate = int(input('Rating: '))
 
         # Good bye
-
+        time.sleep(1)
         print('\nTHANK YOU FOR USING OUR SERVICE.')
 
 elif choice == '0':
-    print('Exit')
+    exit()
 else:
     print("Invalid input. Please enter a valid number")
