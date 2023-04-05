@@ -48,9 +48,12 @@ if choice == '1':
     # Choosing which bin to open
     choice = input(':')
     if choice == 'Yes':
-        time.sleep(1)
+        time.sleep(2)
 
-        print("\nThe green bin labeled 'ORGANIC WASTE' opens.\n\nProceed to measure weight of the waste.\n")
+        print("\nThe green bin labeled 'ORGANIC WASTE' opens.\n")
+
+        time.sleep(2)
+        print('Proceed to measure weight of the waste.\n')
 
         # Enetering and recording the weight:
 
